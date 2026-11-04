@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jaspreet Singh — Portfolio</title>
+
+  <!-- Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Devicons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  >
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg portfolio-nav">
+    <div class="container-fluid px-4 px-lg-5">
+      <a class="navbar-brand" href="#top">
+        <span class="brand-name">Jaspreet Singh</span>
+        <span class="brand-divider">·</span>
+        <span class="brand-portfolio">Portfolio</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#portfolioNav"
+        aria-controls="portfolioNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="portfolioNav">
+        <div class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+          <a
+            class="nav-link"
+            href="https://github.com/jaspreetsingh-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</a>
+
+          <a
+            class="nav-link"
+            href="https://www.linkedin.com/in/jaspreet-cloud-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >LinkedIn</a>
+
+          <a
+            class="nav-link"
+            href="Jaspreet_Singh_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Resume</a>
+
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <section class="stack-section" id="stack">
+      <div class="stack-intro">
+        <h1>
+          My work spans from Python to cloud infrastructure and automation.
+        </h1>
+
+        <p>Here's what I use.</p>
+      </div>
+
+      <div class="technology-list" aria-label="Technologies used in my projects">
+
+        <div class="technology-row">
+          <i class="devicon-amazonwebservices-plain technology-icon" aria-hidden="true"></i>
+
+          <div class="technology-content">
+            <h2>AWS</h2>
+            <p>Cloud infrastructure and application deployment</p>
+            <span class="technology-projects">Pulse CI · GitHub Analyzer</span>
+          </div>
+        </div>
+
+        <div class="technology-row">
+          <i class="devicon-python-plain technology-icon" aria-hidden="true"></i>
+
+          <div class="technology-content">
+            <h2>Python</h2>
+            <p>Application development and automation</p>
+            <span class="technology-projects">Pulse CI · GitHub Analyzer</span>
+          </div>
+        </div>
+
+        <div class="technology-row">
+          <i class="devicon-docker-plain technology-icon" aria-hidden="true"></i>
+
+          <div class="technology-content">
+            <h2>Docker</h2>
+            <p>Packaging applications and their dependencies</p>
+            <span class="technology-projects">Pulse CI</span>
+          </div>
+        </div>
+
+        <div class="technology-row">
+          <i class="devicon-terraform-plain technology-icon" aria-hidden="true"></i>
+
+          <div class="technology-content">
+            <h2>Terraform</h2>
+            <p>Defining and managing infrastructure as code</p>
+            <span class="technology-projects">Pulse CI · GitHub Analyzer</span>
+          </div>
+        </div>
+
+        <div class="technology-row">
+          <i class="devicon-postgresql-plain technology-icon" aria-hidden="true"></i>
+
+          <div class="technology-content">
+            <h2>PostgreSQL</h2>
+            <p>Storing and querying structured data</p>
+            <span class="technology-projects">Pulse CI</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+
+      <!-- Section introduction -->
+      <div class="stack-intro">
+        <h1>Hands-on projects.</h1>
+        <p>Both projects were deployed on AWS and are now taken down.</p>
+      </div>
+
+      <!-- 01 — Pulse CI -->
+      <article class="project" id="pulse-ci">
+
+        <div class="project-heading">
+          <h2>01 — Pulse CI</h2>
+          <p class="project-subtitle">
+            Repository analysis · Webhooks · Cloud infrastructure
+          </p>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="project-screenshots">
+
+          <a
+            class="project-image-link"
+            href="https://raw.githubusercontent.com/jaspreetsingh-dev/pulse_ci/master/docs/manual-analysis.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View full-size Pulse CI manual analysis screenshot on GitHub"
+          >
+            <img
+              src="images/manual-analysis.png"
+              alt="Pulse CI manual repository analysis"
+              loading="lazy"
+            >
+            <span class="image-link-label">
+              View full image <span aria-hidden="true">↗</span>
+            </span>
+          </a>
+
+          <a
+            class="project-image-link"
+            href="https://raw.githubusercontent.com/jaspreetsingh-dev/pulse_ci/master/docs/webhook-analysis.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View full-size Pulse CI webhook analysis screenshot on GitHub"
+          >
+            <img
+              src="images/webhook-analysis.png"
+              alt="Pulse CI webhook-triggered repository analysis"
+              loading="lazy"
+            >
+            <span class="image-link-label">
+              View full image <span aria-hidden="true">↗</span>
+            </span>
+          </a>
+
+        </div>
+
+        <!-- Project details -->
+        <div class="project-content">
+
+          <p>
+            A repository gets pushed. Pulse CI checks its dependencies, tests,
+            documentation, and configuration, then stores a quality score in
+            PostgreSQL. Analyses can also be started manually, without waiting
+            for a GitHub event.
+          </p>
+
+          <p>
+            The Flask application connects GitHub webhook events and manual
+            submissions to the same analysis workflow. Results are stored in
+            PostgreSQL and surfaced through the dashboard.
+          </p>
+
+          <p class="project-flow">
+            GitHub webhook or manual submission
+            <span>→</span> Flask
+            <span>→</span> Repository checks
+            <span>→</span> PostgreSQL
+            <span>→</span> Dashboard
+          </p>
+
+          <p>
+            The application was containerized with Docker and deployed on EC2,
+            with PostgreSQL on RDS inside a VPC. IAM, Systems Manager Parameter
+            Store, and Secrets Manager support access and configuration;
+            CloudWatch provides runtime logs. Terraform defines the infrastructure.
+          </p>
+
+          <div class="project-detail">
+            <h3>Built with</h3>
+            <p class="project-tech">
+              Python · Flask · Docker · PostgreSQL · AWS · Terraform
+            </p>
+          </div>
+
+          <p>
+            Application screenshots show manual and webhook-triggered analyses.
+            CloudWatch logs provide a view into runtime activity.
+          </p>
+
+          <div class="project-detail">
+            <h3>A limitation</h3>
+            <p>
+              The check is string-based, not semantic. It searches for patterns
+              such as <code>password=</code>, <code>api_key=</code>, and
+              <code>secret=</code>, so it can flag code that handles credentials
+              securely and miss variations such as <code>password = "..."</code>.
+              It detects matching strings—not whether a credential is real or exposed.
+            </p>
+          </div>
+
+          <div class="project-links">
+            <a
+              class="project-button"
+              href="https://github.com/jaspreetsingh-dev/pulse_ci"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repository <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="project-button"
+              href="https://github.com/jaspreetsingh-dev/pulse_ci/blob/master/README.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              README <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <p class="project-status">
+            Previously deployed on AWS. Not currently running.
+          </p>
+
+        </div>
+      </article>
+
+      <!-- 02 — GitHub Analyzer -->
+      <article class="project" id="github-analyzer">
+
+        <div class="project-heading">
+          <h2>02 — GitHub Analyzer</h2>
+          <p class="project-subtitle">
+            Developer comparison · GitHub API · Scoring model
+          </p>
+          <p class="project-lead">Two profiles. One comparison.</p>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="project-screenshots">
+
+          <a
+            class="project-image-link"
+            href="https://raw.githubusercontent.com/jaspreetsingh-dev/github-analyzer/master/docs/frontend.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View full-size GitHub Analyzer comparison interface screenshot on GitHub"
+          >
+            <img
+              src="images/frontend-g.png"
+              alt="GitHub Analyzer comparison interface"
+              loading="lazy"
+            >
+            <span class="image-link-label">
+              View full image <span aria-hidden="true">↗</span>
+            </span>
+          </a>
+
+          <a
+            class="project-image-link"
+            href="https://raw.githubusercontent.com/jaspreetsingh-dev/github-analyzer/master/docs/result.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View full-size GitHub Analyzer comparison results screenshot on GitHub"
+          >
+            <img
+              src="images/result.png"
+              alt="GitHub Analyzer comparison results"
+              loading="lazy"
+            >
+            <span class="image-link-label">
+              View full image <span aria-hidden="true">↗</span>
+            </span>
+          </a>
+
+        </div>
+
+        <!-- Project details -->
+        <div class="project-content">
+
+          <p>
+            GitHub Analyzer compares two GitHub developers using repository
+            statistics and language distribution, then generates a weighted
+            Codex Score. Comparison reports are stored in Amazon S3.
+          </p>
+
+          <p>
+            The score combines five factors: Star Power (25%), Community Impact
+            (20%), Repository Consistency (20%), Documentation Quality (20%),
+            and Language Diversity (15%). The weighted result is normalized
+            to a score from 0–100.
+          </p>
+
+          <p class="project-flow">
+            Browser <span>→</span> Flask on EC2
+            <span>→</span> GitHub REST API
+            <span>→</span> Comparison engine
+            <span>→</span> Boto3
+            <span>→</span> IAM role
+            <span>→</span> S3
+          </p>
+
+          <p>
+            The application uses the GitHub REST API to gather profile and
+            repository data. Boto3 writes comparison reports to S3 using an
+            EC2 IAM role, avoiding hardcoded AWS credentials. Terraform defines
+            the infrastructure.
+          </p>
+
+          <div class="project-detail">
+            <h3>Built with</h3>
+            <p class="project-tech">
+              Python · Flask · JavaScript · GitHub REST API · EC2 · S3 · IAM · Boto3 · Terraform
+            </p>
+          </div>
+
+          <p>
+            Application interface and comparison results demonstrate the workflow.
+          </p>
+
+          <div class="project-detail">
+            <h3>What the score means</h3>
+            <p>
+              The Codex Score compares observable GitHub activity and repository
+              characteristics using a weighted model. It is not a code-quality
+              verdict; it does not inspect whether a repository's implementation
+              is correct, secure, or well-designed.
+            </p>
+          </div>
+
+          <div class="project-links">
+            <a
+              class="project-button"
+              href="https://github.com/jaspreetsingh-dev/github-analyzer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Repository <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="project-button"
+              href="https://github.com/jaspreetsingh-dev/github-analyzer/blob/master/readme.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              README <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <p class="project-status">
+            Previously deployed on AWS. Not currently running.
+          </p>
+
+        </div>
+      </article>
+
+    </section>
+
+    <section id="contact" class="contact-section">
+
+      <div class="stack-intro">
+        <h1>Get in touch.</h1>
+        <p>Looking to grow in a professional engineering environment, contribute to meaningful work, and learn from experienced engineers.</p>
+      </div>
+
+      <a
+        class="contact-email"
+        href="mailto:jaspreetsinghh.dev@gmail.com"
+      >
+        jaspreetsinghh.dev@gmail.com
+      </a>
+
+      <div class="project-links">
+        <a
+          class="project-button"
+          href="https://github.com/jaspreetsingh-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          class="project-button"
+          href="https://www.linkedin.com/in/jaspreet-cloud-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          class="project-button"
+          href="Jaspreet_Singh_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <p class="contact-ending">That’s the work so far.</p>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Next chapter: AI engineering</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
