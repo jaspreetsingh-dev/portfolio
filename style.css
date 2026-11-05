@@ -442,19 +442,6 @@ body {
   padding: 24px;
 }
 
-.contact-email {
-  display: inline-block;
-  margin: 32px 0;
-  color: var(--text);
-  font-size: 2rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.contact-email:hover {
-  color: var(--text-muted);
-}
-
 .contact-ending {
   margin: 100px 0 0;
   color: var(--text);
@@ -462,6 +449,23 @@ body {
   font-weight: 500;
   letter-spacing: -0.06em;
   line-height: 1.05;
+}
+
+.contact-email {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 32px 0;
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.contact-email:hover {
+  color: var(--text-muted);
 }
 
 /* Closing footer */
@@ -480,13 +484,16 @@ body {
   font-size: 0.9rem;
 }
 
+
+/* Mobile */
 @media (max-width: 600px) {
   .contact-section {
     padding: 24px 20px;
   }
 
   .contact-email {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 5.5vw, 1.5rem);
+    line-height: 1.4;
   }
 
   .contact-ending {
